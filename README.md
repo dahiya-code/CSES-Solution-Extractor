@@ -28,4 +28,16 @@ or
 sudo pip install lxml
 ```
 </li>
+
+<li>
+Finally, so that this code works with either Python2 or Python3, you will need one helper library. Run in the terminal:
+  
+```sh
+pip install future
+```
+or
+```sh
+sudo pip install future
+```  
+</li>
 </ol>
