@@ -79,9 +79,9 @@ with open('home.html','r') as html_file:
   agent_name = 'James Bond'
   kill_count = 9
 
-  old ways
+  #old ways
   print('{0} has killed {1} enemies '.format(agent_name,kill_count))
 
-  f-strings way
+  #f-strings way
   print(f'{agent_name} has killed {kill_count} enemies')</li>
  ```
