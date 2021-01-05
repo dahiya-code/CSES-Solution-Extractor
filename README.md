@@ -74,11 +74,14 @@ with open('home.html','r') as html_file:
   <li>Gets the text in the h5 tag of the ith course element</li> 
   <li>Split the sentence by blanks and grab the last element</li>
   <li> f stands for formatted string. 
+  
+  ```
   agent_name = 'James Bond'
-kill_count = 9
+  kill_count = 9
 
-old ways
-print('{0} has killed {1} enemies '.format(agent_name,kill_count))
+  old ways
+  print('{0} has killed {1} enemies '.format(agent_name,kill_count))
 
-f-strings way
-print(f'{agent_name} has killed {kill_count} enemies')</li>
+  f-strings way
+  print(f'{agent_name} has killed {kill_count} enemies')</li>
+ ```
