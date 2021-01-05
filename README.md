@@ -59,16 +59,26 @@ with open('home.html','r') as html_file:
      for course in course_cards:
          course_name = course.h5.text
          course price = course.a.text.split()[-1]
+         print(f'{course_name} costs {course_price}')
 ```
   <li>Remember that BeautifulSoup installs in bs4 file hence we use "from bs4 import BeautifulSoup"</li>
   <li>"with open" enables us to read the contents of the file</li>
   <li>"read()" will read the file content</li>
   <li>"soup" is an instance of BeautifulSoup library with args as the file we want to scrape and the parser</li>
   <li>"prettify" method allows us to view the html file with indentations</li>
-  <li>"find_all" is used because find will stop the execution after it finds the first h5. Output will be in the form of a list eg [< h5 >lorem ipsum</h5>,< h5 >lorem ipsum</h5></li>
+  <li>"find_all" is used because find will stop the execution after it finds the first h5. Output will be in the form of a list eg [< h5 >lorem ipsum</h5>,< h5 >lorem ipsum</h5>]</li>
   <li>Output:
       lorem ipsum
       lorem ipsum</li>
   <li>Find all the divs with class name card. Underscore is used because class is a built-in function in python. On adding underscore BS with understand that we are relating it to the html attribute</li>
   <li>Gets the text in the h5 tag of the ith course element</li> 
   <li>Split the sentence by blanks and grab the last element</li>
+  <li> f stands for formatted string. 
+  agent_name = 'James Bond'
+kill_count = 9
+
+old ways
+print('{0} has killed {1} enemies '.format(agent_name,kill_count))
+
+f-strings way
+print(f'{agent_name} has killed {kill_count} enemies')</li>
