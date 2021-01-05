@@ -44,7 +44,7 @@ sudo pip install future
 
 ## Quick Revision/Explanation of code
 
-<ul>
+<ol>
   
   ```sh
 from bs4 install BeautifulSoup
@@ -52,8 +52,13 @@ with open('home.html','r') as html_file:
      content = html_file.read()
      soup = BeautifulSoup(content,'lxml')
      #print(soup.prettify())
-     tags = soup.find_all('h5')
-     print(tags)
+     #tags = soup.find_all('h5')
+     #for tag in tags:
+         #print(tag.text)
+     course_cards = soup.find_all('div' , class_='card')
+     for course in course_cards:
+         course_name = course.h5.text
+         course price = course.a.text.split()[-1]
 ```
   <li>Remember that BeautifulSoup installs in bs4 file hence we use "from bs4 import BeautifulSoup"</li>
   <li>"with open" enables us to read the contents of the file</li>
@@ -61,3 +66,9 @@ with open('home.html','r') as html_file:
   <li>"soup" is an instance of BeautifulSoup library with args as the file we want to scrape and the parser</li>
   <li>"prettify" method allows us to view the html file with indentations</li>
   <li>"find_all" is used because find will stop the execution after it finds the first h5. Output will be in the form of a list eg [< h5 >lorem ipsum</h5>,< h5 >lorem ipsum</h5></li>
+  <li>Output:
+      lorem ipsum
+      lorem ipsum</li>
+  <li>Find all the divs with class name card. Underscore is used because class is a built-in function in python. On adding underscore BS with understand that we are relating it to the html attribute</li>
+  <li>Gets the text in the h5 tag of the ith course element</li> 
+  <li>Split the sentence by blanks and grab the last element</li>
