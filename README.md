@@ -41,3 +41,23 @@ sudo pip install future
 ```  
 </li>
 </ol>
+##### Remember that it installs in bs4 file hence we use from bs4 import BeautifulSoup
+
+##Quick Revision/Explanation of code
+<ul>
+  
+  ```sh
+from bs4 install BeautifulSoup
+with open('home.html','r') as html_file:
+     content = html_file.read()
+     soup = BeautifulSoup(content,'lxml')
+     #print(soup.prettify())
+     tags = soup.find_all('h5')
+     print(tags)
+```
+  <li>Remember that BeautifulSoup installs in bs4 file hence we use "from bs4 import BeautifulSoup"</li>
+  <li>"with open" enables us to read the contents of the file</li>
+  <li>"read()" will read the file content</li>
+  <li>"soup" is an instance of BeautifulSoup library with args as the file we want to scrape and the parser</li>
+  <li>"prettify" method allows us to view the html file with indentations</li>
+  <li>"find_all" is used because find will stop the execution after it finds the first h5. Output will be in the form of a list eg [<h5>lorem ipsum</h5>,<h5>lorem ipsum</h5></li>
