@@ -90,3 +90,10 @@ with open('home.html','r') as html_file:
 pip install requests
 ```
 It requests information from a specific website
+
+## Points to be remembered 
+<ol>
+  <li>
+    r.text is the content of the response in Unicode, and r.content is the content of the response in bytes.
+  </li>
+</ol>
