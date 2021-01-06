@@ -85,3 +85,8 @@ with open('home.html','r') as html_file:
   #f-strings way
   print(f'{agent_name} has killed {kill_count} enemies')</li>
  ```
+## Requests Library
+```
+pip install requests
+```
+It requests information from a specific website
