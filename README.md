@@ -90,6 +90,7 @@ with open('home.html','r') as html_file:
 pip install requests
 ```
 It requests information from a specific website
+<a href=""https://realpython.com/python-requests/>For more information</a>
 
 ## Points to be remembered 
 <ol>
