@@ -98,3 +98,12 @@ It requests information from a specific website
     r.text is the content of the response in Unicode, and r.content is the content of the response in bytes.
   </li>
 </ol>
+
+## Installation
+<ol>
+  <li> Open source code folder</li>
+  <li> 
+    ```
+    python main.py
+    ```</li>
+  <li> CSES solns saved in that folder<li>
