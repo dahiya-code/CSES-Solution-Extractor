@@ -70,7 +70,7 @@ if __name__ == "__main__":
             continue
         code = getSolution(_, sol)
         ext = '.cpp'
-        path = 'cses/' + _ + ' - ' + questions[_] + ext
+        path = _ + ' - ' + questions[_] + ext
         file = open(path, 'w')
         file.writelines(code.split('\n'))
         file.close()
