@@ -102,10 +102,6 @@ It requests information from a specific website
 ## Installation
 <ol>
   <li> Open source code folder</li>
-  <li> 
-    
-    ```sh
-     python main.py
-    ```
+  <li> Run main.py
   </li>
   <li> CSES solns saved in that folder</li>
