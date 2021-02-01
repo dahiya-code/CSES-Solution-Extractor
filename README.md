@@ -104,7 +104,7 @@ It requests information from a specific website
   <li> Open source code folder</li>
   <li> 
     
-    ```
+    ```sh
      python main.py
     ```
   </li>
