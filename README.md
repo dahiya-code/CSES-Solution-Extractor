@@ -103,7 +103,9 @@ It requests information from a specific website
 <ol>
   <li> Open source code folder</li>
   <li> 
+    
     ```
-    python main.py
-    ```</li>
+     python main.py
+    ```
+  </li>
   <li> CSES solns saved in that folder<li>
