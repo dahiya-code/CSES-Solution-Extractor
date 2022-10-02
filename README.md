@@ -42,7 +42,7 @@ sudo pip install future
 </li>
 </ol>
 
-## Quick Revision
+## Good to know
 
 <ol>
   
